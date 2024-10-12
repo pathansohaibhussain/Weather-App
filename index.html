@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+            <p>Get the latest weather updates!</p>
+        </header>
+        <main>
+            <div class="search">
+                <input type="text" id="locationInput" placeholder="Enter a city...">
+                <ul id="suggestions" class="suggestions-list"></ul>
+                <button id="searchBtn">Get Weather</button>
+            </div>
+            <div id="weatherDisplay" class="weather-display">
+                <h2 id="cityName"></h2>
+                <p id="temperature"></p>
+                <p id="conditions"></p>
+                <p id="humidity"></p>
+                <p id="windSpeed"></p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Weather App. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
